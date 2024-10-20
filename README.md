@@ -37,47 +37,6 @@ Consistent Hashing
 - cascading failure
 - solution of cascading Failure ( V Node)
 
-Caching
-: Storing precomputed data at some place so as to not fetch again from Database.
-- global Cache
-- loacl Cache(local app server itself)
-- in-browser caching
-
-Caching related Problem
-- limited storage
-- keep data sync
-   - TTL
-
-Netflix OpenConnect
-
-### Cache sync policies
-- Write Through (Through n through)
-   - Server write on Cache
-   - Server write on DB
-   - if any fail then request failed  
-   - if success then hurrey
-- Write Back (backend sync DB)
-   - write cache
-   - give success
-   - Asynchronously update DB in backend
-- Write Around (around the cache)
-   - Write DB first
-   - then sync cache over the time.
-
-
-CDN working
-- Replication
-- Anycast (Multiplexing)
-
-Cache Eviction Strategies
-- LRU
-- LFU
-- MRU
-- LIFO
-- FIFO
-
-
-Lazy Invalidation
 
 CAP Theorem
 : Whenever there is a network partition in the distributed system, the system can either be consistentor Avaialbe.
@@ -104,7 +63,7 @@ Master-Slave Architecture
    - Columnar Compression is possible.
 
 
-Internals of No-SQL DB
+Internals of No-SQL DB (Scaling)
    - Whan to create new shard ?
    - How Sharding happens
       - Consistent Hashing is used
@@ -124,27 +83,15 @@ Internals of No-SQL DB
          -  R + W principal
          - Gossip Protocol
 
- Choosing Correct NiSQL DB
+Choosing Correct NiSQL DB
   - Just need single Key Value  ==> Key-Value DB
   - Schema is not final ==> Document DB
   - need analytics, only single column values = > Column Family DB
   
-Storage Engine
-- WAL
-- WAL + Indexing
-- compaction
-LSM (https://www.scaler.com/academy/mentee-dashboard/class/231985/session)
 
 
-Kafka
-Zookeeper
-HDFS
 QuadTree
 Geo Hashing
-Microservices
 
-185.42 101.6
-109.22 104.14
 
-window
-114.3   104.14
+

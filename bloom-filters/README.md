@@ -29,3 +29,7 @@ Redis can be used  to create Bloom filter
 
 - only when there are nno delete operations.
 - when only require nnot present 
+
+
+### Resources
+[Bloom Filters - Byte Byte Go](https://www.youtube.com/watch?v=V3pzxngeLqw)
