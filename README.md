@@ -94,4 +94,7 @@ QuadTree
 Geo Hashing
 
 
+https://www.youtube.com/@jordanhasnolife5163?themeRefresh=1
 
+
+https://www.youtube.com/@SDFC/videos
